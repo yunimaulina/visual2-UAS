@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 246
-  Top = 169
+  Left = 253
+  Top = 225
   Width = 928
   Height = 480
   Caption = 'ORANG TUA'

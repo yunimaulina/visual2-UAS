@@ -1,6 +1,6 @@
 object Form4: TForm4
-  Left = 192
-  Top = 125
+  Left = 253
+  Top = 256
   Width = 928
   Height = 480
   Caption = 'HUBUNGAN'
