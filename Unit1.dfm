@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 299
-  Top = 131
+  Left = 271
+  Top = 161
   Width = 928
   Height = 480
   Caption = 'SISWA'
@@ -221,6 +221,7 @@ object Form1: TForm1
     Top = 304
     Width = 681
     Height = 129
+    DataSource = ds1
     TabOrder = 14
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -275,5 +276,35 @@ object Form1: TForm1
     Items.Strings = (
       'AKTIF'
       'NONAKTIF')
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'uasvisual_2110010145_yunimaulina'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 
+      'C:\Users\ACER\Documents\visual2uas_2110010145_yunimaulina\libmys' +
+      'ql.dll'
+    Left = 824
+    Top = 80
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT*FROM tb_siswa')
+    Params = <>
+    Left = 832
+    Top = 144
+  end
+  object ds1: TDataSource
+    DataSet = ZQuery1
+    Left = 832
+    Top = 208
   end
 end

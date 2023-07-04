@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 391
-  Top = 250
+  Left = 246
+  Top = 169
   Width = 928
   Height = 480
   Caption = 'ORANG TUA'
@@ -223,11 +223,42 @@ object Form2: TForm2
     Top = 256
     Width = 697
     Height = 153
+    DataSource = ds1
     TabOrder = 15
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'uasvisual_2110010145_yunimaulina'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 
+      'C:\Users\ACER\Documents\visual2uas_2110010145_yunimaulina\libmys' +
+      'ql.dll'
+    Left = 840
+    Top = 56
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT*FROM tb_orangtua')
+    Params = <>
+    Left = 840
+    Top = 120
+  end
+  object ds1: TDataSource
+    DataSet = ZQuery1
+    Left = 840
+    Top = 192
   end
 end

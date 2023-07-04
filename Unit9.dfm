@@ -1,9 +1,9 @@
 object Form9: TForm9
-  Left = 306
-  Top = 295
+  Left = 262
+  Top = 190
   Width = 928
   Height = 480
-  Caption = 'Form9'
+  Caption = 'beranda'
   Color = cl3DLight
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
