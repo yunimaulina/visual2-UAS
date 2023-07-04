@@ -198,11 +198,42 @@ object Form8: TForm8
     Top = 288
     Width = 569
     Height = 120
+    DataSource = ds1
     TabOrder = 14
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object ds1: TDataSource
+    DataSet = ZQuery1
+    Left = 824
+    Top = 192
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'uasvisual_2110010145_yunimaulina'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 
+      'C:\Users\ACER\Documents\visual2uas_2110010145_yunimaulina\libmys' +
+      'ql.dll'
+    Left = 824
+    Top = 96
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM tb_riwayatpoin')
+    Params = <>
+    Left = 824
+    Top = 144
   end
 end
