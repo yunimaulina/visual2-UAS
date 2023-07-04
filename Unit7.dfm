@@ -1,6 +1,6 @@
 object Form7: TForm7
-  Left = 233
-  Top = 253
+  Left = 223
+  Top = 177
   Width = 928
   Height = 480
   Caption = 'KELAS'
@@ -125,11 +125,42 @@ object Form7: TForm7
     Top = 256
     Width = 761
     Height = 145
+    DataSource = ds1
     TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'uasvisual_2110010145_yunimaulina'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 
+      'C:\Users\ACER\Documents\visual2uas_2110010145_yunimaulina\libmys' +
+      'ql.dll'
+    Left = 816
+    Top = 64
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM tb_kelas')
+    Params = <>
+    Left = 816
+    Top = 112
+  end
+  object ds1: TDataSource
+    DataSet = ZQuery1
+    Left = 816
+    Top = 168
   end
 end
