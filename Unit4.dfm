@@ -125,6 +125,7 @@ object Form4: TForm4
     Top = 224
     Width = 801
     Height = 161
+    DataSource = ds1
     TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -143,5 +144,35 @@ object Form4: TForm4
     Items.Strings = (
       'KANDUNG'
       'ANGKAT')
+  end
+  object ds1: TDataSource
+    DataSet = ZQuery1
+    Left = 808
+    Top = 176
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'uasvisual_2110010145_yunimaulina'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 
+      'C:\Users\ACER\Documents\visual2uas_2110010145_yunimaulina\libmys' +
+      'ql.dll'
+    Left = 656
+    Top = 176
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM tb_hubungan')
+    Params = <>
+    Left = 736
+    Top = 176
   end
 end

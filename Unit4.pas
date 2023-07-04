@@ -4,7 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Grids, DBGrids;
+  Dialogs, StdCtrls, Grids, DBGrids, DB, ZAbstractRODataset,
+  ZAbstractDataset, ZDataset, ZAbstractConnection, ZConnection;
 
 type
   TForm4 = class(TForm)
@@ -24,6 +25,9 @@ type
     btn5: TButton;
     dbgrd1: TDBGrid;
     cbb1: TComboBox;
+    ds1: TDataSource;
+    ZConnection1: TZConnection;
+    ZQuery1: TZQuery;
   private
     { Private declarations }
   public
