@@ -1,6 +1,6 @@
 object Form6: TForm6
-  Left = 237
-  Top = 187
+  Left = 233
+  Top = 159
   Width = 928
   Height = 480
   Caption = 'POIN'

@@ -39,6 +39,7 @@ type
     ZQuery1: TZQuery;
     ds1: TDataSource;
     btn6: TButton;
+    Label11: TLabel;
   private
     { Private declarations }
   public

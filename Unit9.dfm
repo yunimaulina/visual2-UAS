@@ -4,7 +4,7 @@ object Form9: TForm9
   Width = 928
   Height = 480
   Caption = 'BERANDA'
-  Color = clGray
+  Color = clInactiveCaption
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -14,80 +14,131 @@ object Form9: TForm9
   PixelsPerInch = 96
   TextHeight = 16
   object Label1: TLabel
-    Left = 248
-    Top = 48
-    Width = 433
-    Height = 48
+    Left = 240
+    Top = 40
+    Width = 483
+    Height = 52
     Caption = 'SMK TUNAS MUDA'
+    Color = clWhite
     Font.Charset = ANSI_CHARSET
     Font.Color = clNone
     Font.Height = -40
-    Font.Name = 'Castellar'
-    Font.Style = [fsBold, fsUnderline]
+    Font.Name = 'Lucida Calligraphy'
+    Font.Style = [fsBold]
+    ParentColor = False
     ParentFont = False
   end
   object btn1: TButton
-    Left = 248
+    Left = 128
     Top = 128
-    Width = 105
-    Height = 25
+    Width = 185
+    Height = 41
     Caption = 'SISWA'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Sitka Text Semibold'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 0
+    OnClick = btn1Click
   end
   object btn2: TButton
-    Left = 248
-    Top = 176
-    Width = 105
-    Height = 25
+    Left = 128
+    Top = 200
+    Width = 185
+    Height = 41
     Caption = 'ORANG TUA'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Sitka Text Semibold'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 1
   end
   object btn3: TButton
-    Left = 248
-    Top = 224
-    Width = 105
-    Height = 25
+    Left = 128
+    Top = 272
+    Width = 185
+    Height = 41
     Caption = 'WALI KELAS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Sitka Text Semibold'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 2
   end
   object btn4: TButton
-    Left = 248
-    Top = 272
-    Width = 105
-    Height = 25
+    Left = 128
+    Top = 344
+    Width = 185
+    Height = 41
     Caption = 'HUBUNGAN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Sitka Text Semibold'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 3
   end
   object btn5: TButton
-    Left = 576
+    Left = 608
     Top = 128
-    Width = 107
-    Height = 25
+    Width = 187
+    Height = 41
     Caption = 'USER'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Sitka Text Semibold'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 4
   end
   object btn6: TButton
-    Left = 576
-    Top = 176
-    Width = 107
-    Height = 25
+    Left = 608
+    Top = 200
+    Width = 187
+    Height = 41
     Caption = 'POIN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Sitka Text Semibold'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 5
   end
   object btn7: TButton
-    Left = 576
-    Top = 224
-    Width = 107
-    Height = 25
+    Left = 608
+    Top = 272
+    Width = 187
+    Height = 41
     Caption = 'KELAS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Sitka Text Semibold'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 6
   end
   object btn8: TButton
-    Left = 576
-    Top = 272
-    Width = 105
-    Height = 25
+    Left = 608
+    Top = 344
+    Width = 185
+    Height = 41
     Caption = 'RIWAYAT POIN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Sitka Text Semibold'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 7
   end
 end

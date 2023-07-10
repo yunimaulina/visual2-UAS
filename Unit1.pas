@@ -45,8 +45,11 @@ type
     ZQuery1: TZQuery;
     ds1: TDataSource;
     btn6: TButton;
+    Label13: TLabel;
     procedure bersih;
     procedure posisiawal;
+    procedure btn6Click(Sender: TObject);
+    procedure btn2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -57,6 +60,8 @@ var
   Form1: TForm1;
 
 implementation
+
+uses Unit9;
 
 {$R *.dfm}
 
@@ -84,16 +89,92 @@ btn3.Enabled:= False;
 btn4.Enabled:= False;
 btn5.Enabled:= False;
 btn6.Enabled:= True;
-edit1.Enabled:= False;
-edit2.Enabled:= False;
-edit3.Enabled:= False;
-edit4.Enabled:= False;
-edit5.Enabled:= False;
-edit6.Enabled:= False;
-edit7.Enabled:= False;
-edit8.Enabled:= False;
-edit9.Enabled:= False;
+edt1.Enabled:= False;
+edt2.Enabled:= False;
+edt3.Enabled:= False;
+edt4.Enabled:= False;
+edt5.Enabled:= False;
+edt6.Enabled:= False;
+edt7.Enabled:= False;
+edt8.Enabled:= False;
+edt9.Enabled:= False;
+end;
 
+procedure TForm1.btn2Click(Sender: TObject);
+begin
+if edt1.Text ='' then
+begin
+ShowMessage('ID SISWA TIDAK BOLEH KOSONG!');
+end else
+if edt2.Text ='' then
+begin
+ShowMessage('NISN SISWA TIDAK BOLEH KOSONG!');
+end else
+if edt3.Text ='' then
+begin
+ShowMessage('NAMA SISWA TIDAK BOLEH KOSONG!');
+end else
+if edt4.Text ='' then
+begin
+ShowMessage('NIK SISWA TIDAK BOLEH KOSONG!');
+end else
+if edt5.Text ='' then
+begin
+ShowMessage('TEMPAT LAHIR SISWA TIDAK BOLEH KOSONG!');
+end else
+if cbb1.Text ='' then
+begin
+ShowMessage('JENIS KELAMIN SISWA TIDAK BOLEH KOSONG!');
+end else
+if edt6.Text ='' then
+begin
+ShowMessage('TINGKAT KELAS SISWA TIDAK BOLEH KOSONG!');
+end else
+if cbb3.Text ='' then
+begin
+ShowMessage('JURUSAN SISWA TIDAK BOLEH KOSONG!');
+end else
+if edt7.Text ='' then
+begin
+ShowMessage('WALI KELAS SISWA TIDAK BOLEH KOSONG!');
+end else
+if edt8.Text ='' then
+begin
+ShowMessage('ALAMAT SISWA TIDAK BOLEH KOSONG!');
+end else
+if edt9.Text ='' then
+begin
+ShowMessage('TELEPON SISWA TIDAK BOLEH KOSONG!');
+end else
+if cbb2.Text ='' then
+begin
+ShowMessage('STATUS SISWA TIDAK BOLEH KOSONG!');
+end else
+if edt9.Text ='' then
+begin
+ShowMessage('MATA PELAJARAN SISWA TIDAK BOLEH KOSONG!');
+end else
+if cbb2.Text ='' then
+begin
+ShowMessage('STATUS SISWA TIDAK BOLEH KOSONG!');
+end else
+begin
+ZQuery1.SQL.Clear; //simpan
+ZQuery1.SQL.Add('insert into table_siswa values ("'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+FormatDateTime('yyyy/mm/dd',dtp1.Date)+'","'+cbb1.Text+'","'+edt6.Text+'","'+cbb3.Text+'","'+edt7.Text+'","'+edt8.Text+'","'+edt9.Text+'","'+cbb2.Text+'")');
+ZQuery1.ExecSQL;
+
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('select * from table_siswa');
+ZQuery1.Open;
+ShowMessage('DATA BARHASIL DISIMPAN!');
+posisiawal;
+end;
+end;
+
+procedure TForm1.btn2Click(Sender: TObject);
+begin;
+Form9.Show;
+end;
 end;
 
 end.
