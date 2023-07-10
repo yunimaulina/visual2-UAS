@@ -277,11 +277,18 @@ object Form1: TForm1
       'AKTIF'
       'NONAKTIF')
   end
+  object btn6: TButton
+    Left = 816
+    Top = 384
+    Width = 75
+    Height = 25
+    Caption = 'Beranda'
+    TabOrder = 19
+  end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
-    Connected = True
     HostName = 'localhost'
     Port = 3306
     Database = 'uasvisual_2110010145_yunimaulina'
@@ -295,7 +302,6 @@ object Form1: TForm1
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
-    Active = True
     SQL.Strings = (
       'SELECT*FROM tb_siswa')
     Params = <>

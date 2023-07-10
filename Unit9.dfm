@@ -1,6 +1,6 @@
 object Form9: TForm9
-  Left = 270
-  Top = 191
+  Left = 228
+  Top = 168
   Width = 928
   Height = 480
   Caption = 'BERANDA'

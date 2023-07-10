@@ -209,6 +209,14 @@ object Form3: TForm3
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
+  object btn6: TButton
+    Left = 704
+    Top = 232
+    Width = 75
+    Height = 25
+    Caption = 'Beranda'
+    TabOrder = 15
+  end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False

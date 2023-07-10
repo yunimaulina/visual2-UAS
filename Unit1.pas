@@ -44,6 +44,9 @@ type
     ZConnection1: TZConnection;
     ZQuery1: TZQuery;
     ds1: TDataSource;
+    btn6: TButton;
+    procedure bersih;
+    procedure posisiawal;
   private
     { Private declarations }
   public
@@ -56,5 +59,41 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.bersih;
+begin
+edt1.Clear;
+edt2.Clear;
+edt3.Clear;
+edt4.Clear;
+edt5.Clear;
+edt6.Clear;
+edt7.Clear;
+edt8.Clear;
+edt9.Clear;
+cbb1.Text:='';
+cbb2.Text:='';
+cbb3.Text:='';
+end;
+
+procedure TForm1.posisiawal;
+begin
+btn1.Enabled:= True;
+btn2.Enabled:= False;
+btn3.Enabled:= False;
+btn4.Enabled:= False;
+btn5.Enabled:= False;
+btn6.Enabled:= True;
+edit1.Enabled:= False;
+edit2.Enabled:= False;
+edit3.Enabled:= False;
+edit4.Enabled:= False;
+edit5.Enabled:= False;
+edit6.Enabled:= False;
+edit7.Enabled:= False;
+edit8.Enabled:= False;
+edit9.Enabled:= False;
+
+end;
 
 end.
