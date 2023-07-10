@@ -133,6 +133,14 @@ object Form7: TForm7
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
+  object btn6: TButton
+    Left = 680
+    Top = 192
+    Width = 75
+    Height = 25
+    Caption = 'Beranda'
+    TabOrder = 10
+  end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
