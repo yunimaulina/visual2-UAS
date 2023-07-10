@@ -149,6 +149,14 @@ object Form5: TForm5
       'AKTIF'
       'NONAKTIF')
   end
+  object btn6: TButton
+    Left = 600
+    Top = 192
+    Width = 75
+    Height = 25
+    Caption = 'Beranda'
+    TabOrder = 11
+  end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False

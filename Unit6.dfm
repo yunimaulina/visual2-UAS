@@ -145,6 +145,14 @@ object Form6: TForm6
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
+  object btn6: TButton
+    Left = 720
+    Top = 224
+    Width = 75
+    Height = 25
+    Caption = 'Beranda'
+    TabOrder = 11
+  end
   object ds1: TDataSource
     DataSet = ZQuery1
     Left = 776

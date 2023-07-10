@@ -145,6 +145,14 @@ object Form4: TForm4
       'KANDUNG'
       'ANGKAT')
   end
+  object btn6: TButton
+    Left = 544
+    Top = 144
+    Width = 75
+    Height = 25
+    Caption = 'Beranda'
+    TabOrder = 11
+  end
   object ds1: TDataSource
     DataSet = ZQuery1
     Left = 808

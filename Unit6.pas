@@ -28,6 +28,7 @@ type
     ds1: TDataSource;
     ZConnection1: TZConnection;
     ZQuery1: TZQuery;
+    btn6: TButton;
   private
     { Private declarations }
   public
