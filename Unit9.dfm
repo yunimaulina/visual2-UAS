@@ -146,5 +146,6 @@ object Form9: TForm9
     Font.Style = []
     ParentFont = False
     TabOrder = 7
+    OnClick = btn8Click
   end
 end
