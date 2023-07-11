@@ -285,6 +285,7 @@ object Form1: TForm1
     Height = 25
     Caption = 'EDIT'
     TabOrder = 11
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 824
@@ -315,6 +316,7 @@ object Form1: TForm1
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object dtp1: TDateTimePicker
     Left = 168
@@ -374,6 +376,7 @@ object Form1: TForm1
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
+    Connected = True
     HostName = 'localhost'
     Port = 3306
     Database = 'uasvisual_2110010145_yunimaulina'
@@ -387,6 +390,7 @@ object Form1: TForm1
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
+    Active = True
     SQL.Strings = (
       'SELECT*FROM tb_siswa')
     Params = <>

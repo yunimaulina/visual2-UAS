@@ -104,7 +104,6 @@ object Form2: TForm2
     Width = 145
     Height = 21
     TabOrder = 0
-    Text = 'edt1'
   end
   object edt2: TEdit
     Left = 240
@@ -112,7 +111,6 @@ object Form2: TForm2
     Width = 145
     Height = 21
     TabOrder = 1
-    Text = 'edt2'
   end
   object edt3: TEdit
     Left = 240
@@ -120,7 +118,6 @@ object Form2: TForm2
     Width = 145
     Height = 21
     TabOrder = 2
-    Text = 'edt3'
   end
   object cbb1: TComboBox
     Left = 240
@@ -129,7 +126,6 @@ object Form2: TForm2
     Height = 21
     ItemHeight = 13
     TabOrder = 3
-    Text = 'cbb1'
     Items.Strings = (
       'P'
       'L')
@@ -140,7 +136,6 @@ object Form2: TForm2
     Width = 145
     Height = 21
     TabOrder = 4
-    Text = 'edt4'
   end
   object edt5: TEdit
     Left = 640
@@ -148,7 +143,6 @@ object Form2: TForm2
     Width = 145
     Height = 21
     TabOrder = 5
-    Text = 'edt5'
   end
   object cbb2: TComboBox
     Left = 640
@@ -157,7 +151,6 @@ object Form2: TForm2
     Height = 21
     ItemHeight = 13
     TabOrder = 6
-    Text = 'cbb2'
     Items.Strings = (
       'Islam'
       'Kristen'
@@ -171,7 +164,6 @@ object Form2: TForm2
     Width = 145
     Height = 21
     TabOrder = 7
-    Text = 'edt6'
   end
   object cbb3: TComboBox
     Left = 640
@@ -180,7 +172,6 @@ object Form2: TForm2
     Height = 21
     ItemHeight = 13
     TabOrder = 8
-    Text = 'cbb3'
     Items.Strings = (
       'KANDUNG'
       'ANGKAT')
@@ -200,6 +191,7 @@ object Form2: TForm2
     Height = 25
     Caption = 'SIMPAN'
     TabOrder = 10
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 328
@@ -231,7 +223,6 @@ object Form2: TForm2
     Width = 145
     Height = 21
     TabOrder = 14
-    Text = 'edt7'
   end
   object dbgrd1: TDBGrid
     Left = 80
@@ -245,6 +236,7 @@ object Form2: TForm2
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object btn6: TButton
     Left = 704
@@ -258,6 +250,7 @@ object Form2: TForm2
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
+    Connected = True
     HostName = 'localhost'
     Port = 3306
     Database = 'uasvisual_2110010145_yunimaulina'
@@ -271,6 +264,7 @@ object Form2: TForm2
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
+    Active = True
     SQL.Strings = (
       'SELECT*FROM tb_orangtua')
     Params = <>

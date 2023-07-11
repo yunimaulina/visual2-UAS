@@ -228,7 +228,7 @@ end else
 begin
 ShowMessage('DATA BERHASIL DIUPDATE!'); //EDIT
 ZQuery1.SQL.Clear;
-ZQuery1.SQL.Add('Update tb_siswa set id_siswa= "'+edt1.Text+'",nisn ="'+edt2.Text+'",nama_siswa="'+edt3.Text+'",nik="'+edt4.Text+'",tempat_lahir="'+edt5.Text+'",tanggal_lahir="'+FormatDateTime('yyyy/mm/dd',dtp1.Date)+'",jenis_kelamin="'+cbb1.Text+'",tingkat_kelas="'+edt6.Text+'",jurusan="'+cbb2.Text+'",wali_kelas="'+edt7.Text+'",alamat="'+edt8.Text+'",telpon="'+edt9.Text+'",status="'+cbb3.Text+'" where id_siswa="'+edt1.Text+'"');
+ZQuery1.SQL.Add('Update tb_siswa set id_siswa= "'+edt1.Text+'",nisn ="'+edt2.Text+'",nama_siswa="'+edt3.Text+'",nik="'+edt4.Text+'",tempat_lahir="'+edt5.Text+'",tanggal_lahir="'+FormatDateTime('yyyy/mm/dd',dtp1.Date)+'",jenis_kelamin="'+cbb1.Text+'",tingkat_kelas="'+edt6.Text+'",jurusan="'+cbb2.Text+'",wali_kelas="'+edt7.Text+'",alamat="'+edt8.Text+'",telepon="'+edt9.Text+'",status="'+cbb3.Text+'" where id_siswa="'+edt1.Text+'"');
 ZQuery1. ExecSQL;
 
 ZQuery1.SQL.Clear;

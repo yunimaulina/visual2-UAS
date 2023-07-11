@@ -18,6 +18,7 @@ type
     btn7: TButton;
     btn8: TButton;
     procedure btn1Click(Sender: TObject);
+    procedure btn2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,13 +30,18 @@ var
 
 implementation
 
-uses Unit1;
+uses Unit1, Unit2;
 
 {$R *.dfm}
 
 procedure TForm9.btn1Click(Sender: TObject);
 begin
 form1.show;
+end;
+
+procedure TForm9.btn2Click(Sender: TObject);
+begin
+form2.show;
 end;
 
 end.
