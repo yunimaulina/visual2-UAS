@@ -86,6 +86,7 @@ object Form9: TForm9
     Font.Style = []
     ParentFont = False
     TabOrder = 3
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 608
@@ -100,6 +101,7 @@ object Form9: TForm9
     Font.Style = []
     ParentFont = False
     TabOrder = 4
+    OnClick = btn5Click
   end
   object btn6: TButton
     Left = 608
@@ -114,6 +116,7 @@ object Form9: TForm9
     Font.Style = []
     ParentFont = False
     TabOrder = 5
+    OnClick = btn6Click
   end
   object btn7: TButton
     Left = 608
