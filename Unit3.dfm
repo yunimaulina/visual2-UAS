@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 287
-  Top = 263
+  Left = 223
+  Top = 141
   Width = 928
   Height = 480
   Caption = 'WALI KELAS'
@@ -91,6 +91,7 @@ object Form3: TForm3
     Height = 25
     Caption = 'SIMPAN'
     TabOrder = 1
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 360
@@ -107,6 +108,7 @@ object Form3: TForm3
     Height = 25
     Caption = 'HAPUS'
     TabOrder = 3
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 592
@@ -208,6 +210,7 @@ object Form3: TForm3
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object btn6: TButton
     Left = 704
