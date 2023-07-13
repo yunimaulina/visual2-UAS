@@ -82,7 +82,6 @@ object Form8: TForm8
     Width = 121
     Height = 21
     TabOrder = 0
-    Text = 'edt1'
   end
   object edt2: TEdit
     Left = 184
@@ -90,7 +89,6 @@ object Form8: TForm8
     Width = 121
     Height = 21
     TabOrder = 1
-    Text = 'edt2'
   end
   object edt3: TEdit
     Left = 184
@@ -98,7 +96,6 @@ object Form8: TForm8
     Width = 121
     Height = 21
     TabOrder = 2
-    Text = 'edt3'
   end
   object edt4: TEdit
     Left = 184
@@ -106,7 +103,6 @@ object Form8: TForm8
     Width = 121
     Height = 21
     TabOrder = 3
-    Text = 'edt4'
   end
   object edt5: TEdit
     Left = 184
@@ -114,7 +110,6 @@ object Form8: TForm8
     Width = 121
     Height = 21
     TabOrder = 4
-    Text = 'edt5'
   end
   object edt6: TEdit
     Left = 504
@@ -122,7 +117,6 @@ object Form8: TForm8
     Width = 121
     Height = 21
     TabOrder = 5
-    Text = 'edt6'
   end
   object edt7: TEdit
     Left = 504
@@ -130,7 +124,6 @@ object Form8: TForm8
     Width = 121
     Height = 21
     TabOrder = 6
-    Text = 'edt7'
   end
   object btn1: TButton
     Left = 64
@@ -188,7 +181,6 @@ object Form8: TForm8
     Height = 21
     ItemHeight = 13
     TabOrder = 13
-    Text = 'cbb1'
     Items.Strings = (
       'AKTIF'
       'NONAKTIF')

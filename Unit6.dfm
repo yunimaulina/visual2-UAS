@@ -54,7 +54,6 @@ object Form6: TForm6
     Width = 121
     Height = 21
     TabOrder = 0
-    Text = 'edt1'
   end
   object edt2: TEdit
     Left = 456
@@ -62,7 +61,6 @@ object Form6: TForm6
     Width = 121
     Height = 21
     TabOrder = 1
-    Text = 'edt2'
   end
   object edt3: TEdit
     Left = 456
@@ -70,7 +68,6 @@ object Form6: TForm6
     Width = 121
     Height = 21
     TabOrder = 2
-    Text = 'edt3'
   end
   object edt4: TEdit
     Left = 456
@@ -78,7 +75,6 @@ object Form6: TForm6
     Width = 121
     Height = 21
     TabOrder = 3
-    Text = 'edt4'
   end
   object btn1: TButton
     Left = 136
@@ -87,6 +83,7 @@ object Form6: TForm6
     Height = 25
     Caption = 'BARU'
     TabOrder = 4
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 248
@@ -95,6 +92,7 @@ object Form6: TForm6
     Height = 25
     Caption = 'SIMPAN'
     TabOrder = 5
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 360
@@ -103,6 +101,7 @@ object Form6: TForm6
     Height = 25
     Caption = 'EDIT'
     TabOrder = 6
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 472
@@ -111,6 +110,7 @@ object Form6: TForm6
     Height = 25
     Caption = 'HAPUS'
     TabOrder = 7
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 592
@@ -119,6 +119,7 @@ object Form6: TForm6
     Height = 25
     Caption = 'BATAL'
     TabOrder = 8
+    OnClick = btn5Click
   end
   object cbb1: TComboBox
     Left = 456
@@ -127,7 +128,6 @@ object Form6: TForm6
     Height = 21
     ItemHeight = 13
     TabOrder = 9
-    Text = 'cbb1'
     Items.Strings = (
       'PRESTASI'
       'PELANGGARAN')
@@ -144,6 +144,7 @@ object Form6: TForm6
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object btn6: TButton
     Left = 720
@@ -152,6 +153,7 @@ object Form6: TForm6
     Height = 25
     Caption = 'Beranda'
     TabOrder = 11
+    OnClick = btn6Click
   end
   object ds1: TDataSource
     DataSet = ZQuery1

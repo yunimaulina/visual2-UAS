@@ -1,6 +1,6 @@
 object Form4: TForm4
-  Left = 253
-  Top = 256
+  Left = 286
+  Top = 185
   Width = 928
   Height = 480
   Caption = 'HUBUNGAN'
@@ -14,117 +14,120 @@ object Form4: TForm4
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 56
-    Top = 16
+    Left = 304
+    Top = 72
     Width = 10
     Height = 13
     Caption = 'Id'
   end
   object Label2: TLabel
-    Left = 56
-    Top = 48
+    Left = 304
+    Top = 104
     Width = 40
     Height = 13
     Caption = 'Siswa Id'
   end
   object Label3: TLabel
-    Left = 56
-    Top = 80
+    Left = 304
+    Top = 144
     Width = 35
     Height = 13
     Caption = 'Ortu Id'
   end
   object Label4: TLabel
-    Left = 56
-    Top = 112
+    Left = 304
+    Top = 184
     Width = 83
     Height = 13
     Caption = 'Status Hubungan'
   end
   object Label5: TLabel
-    Left = 56
-    Top = 144
+    Left = 304
+    Top = 224
     Width = 56
     Height = 13
     Caption = 'Keterangan'
   end
-  object edt1: TEdit
-    Left = 176
+  object Label6: TLabel
+    Left = 408
     Top = 16
+    Width = 85
+    Height = 13
+    Caption = 'DATA HUBUNGAN'
+  end
+  object edt1: TEdit
+    Left = 408
+    Top = 56
     Width = 121
     Height = 21
     TabOrder = 0
-    Text = 'edt1'
   end
   object edt2: TEdit
-    Left = 176
-    Top = 48
+    Left = 408
+    Top = 96
     Width = 121
     Height = 21
     TabOrder = 1
-    Text = 'edt2'
   end
   object edt3: TEdit
-    Left = 176
-    Top = 80
+    Left = 408
+    Top = 136
     Width = 121
     Height = 21
     TabOrder = 2
-    Text = 'edt3'
   end
   object edt4: TEdit
-    Left = 176
-    Top = 144
+    Left = 408
+    Top = 216
     Width = 121
     Height = 21
     TabOrder = 3
-    Text = 'edt4'
   end
   object btn1: TButton
-    Left = 360
-    Top = 72
+    Left = 160
+    Top = 256
     Width = 75
     Height = 25
     Caption = 'BARU'
     TabOrder = 4
   end
   object btn2: TButton
-    Left = 464
-    Top = 72
+    Left = 272
+    Top = 256
     Width = 75
     Height = 25
     Caption = 'SIMPAN'
     TabOrder = 5
   end
   object btn3: TButton
-    Left = 568
-    Top = 72
+    Left = 392
+    Top = 256
     Width = 75
     Height = 25
     Caption = 'EDIT'
     TabOrder = 6
   end
   object btn4: TButton
-    Left = 672
-    Top = 72
+    Left = 512
+    Top = 256
     Width = 75
     Height = 25
     Caption = 'HAPUS'
     TabOrder = 7
   end
   object btn5: TButton
-    Left = 776
-    Top = 72
+    Left = 624
+    Top = 256
     Width = 75
     Height = 25
     Caption = 'BATAL'
     TabOrder = 8
   end
   object dbgrd1: TDBGrid
-    Left = 56
-    Top = 224
-    Width = 801
-    Height = 161
+    Left = 232
+    Top = 312
+    Width = 465
+    Height = 121
     DataSource = ds1
     TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
@@ -134,20 +137,19 @@ object Form4: TForm4
     TitleFont.Style = []
   end
   object cbb1: TComboBox
-    Left = 176
-    Top = 112
+    Left = 408
+    Top = 176
     Width = 145
     Height = 21
     ItemHeight = 13
     TabOrder = 10
-    Text = 'cbb1'
     Items.Strings = (
       'KANDUNG'
       'ANGKAT')
   end
   object btn6: TButton
-    Left = 544
-    Top = 144
+    Left = 760
+    Top = 352
     Width = 75
     Height = 25
     Caption = 'Beranda'

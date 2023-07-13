@@ -29,6 +29,7 @@ type
     ZConnection1: TZConnection;
     ZQuery1: TZQuery;
     btn6: TButton;
+    Label6: TLabel;
   private
     { Private declarations }
   public

@@ -87,7 +87,6 @@ object Form7: TForm7
     Width = 121
     Height = 21
     TabOrder = 5
-    Text = 'edt1'
   end
   object edt2: TEdit
     Left = 368
@@ -95,7 +94,6 @@ object Form7: TForm7
     Width = 121
     Height = 21
     TabOrder = 6
-    Text = 'edt2'
   end
   object edt3: TEdit
     Left = 368
@@ -103,7 +101,6 @@ object Form7: TForm7
     Width = 121
     Height = 21
     TabOrder = 7
-    Text = 'edt3'
   end
   object cbb1: TComboBox
     Left = 368
@@ -112,7 +109,6 @@ object Form7: TForm7
     Height = 21
     ItemHeight = 13
     TabOrder = 8
-    Text = 'cbb1'
     Items.Strings = (
       'ADMINISTRASI PERKANTORAN'
       'JASA BOGA'

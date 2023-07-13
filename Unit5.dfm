@@ -55,6 +55,7 @@ object Form5: TForm5
     Height = 25
     Caption = 'BARU'
     TabOrder = 0
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 472
@@ -63,6 +64,7 @@ object Form5: TForm5
     Height = 25
     Caption = 'SIMPAN'
     TabOrder = 1
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 592
@@ -71,6 +73,7 @@ object Form5: TForm5
     Height = 25
     Caption = 'EDIT'
     TabOrder = 2
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 704
@@ -79,6 +82,7 @@ object Form5: TForm5
     Height = 25
     Caption = 'HAPUS'
     TabOrder = 3
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 816
@@ -91,31 +95,28 @@ object Form5: TForm5
   object edt1: TEdit
     Left = 144
     Top = 8
-    Width = 121
+    Width = 169
     Height = 21
     TabOrder = 5
-    Text = 'edt1'
   end
   object edt2: TEdit
     Left = 144
     Top = 48
-    Width = 121
+    Width = 169
     Height = 21
     TabOrder = 6
-    Text = 'edt2'
   end
   object edt3: TEdit
     Left = 144
     Top = 88
-    Width = 121
+    Width = 169
     Height = 21
     TabOrder = 7
-    Text = 'edt3'
   end
   object dbgrd1: TDBGrid
-    Left = 64
-    Top = 240
-    Width = 809
+    Left = 16
+    Top = 248
+    Width = 769
     Height = 161
     DataSource = ds1
     TabOrder = 8
@@ -124,15 +125,15 @@ object Form5: TForm5
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object cbb1: TComboBox
     Left = 144
     Top = 128
-    Width = 145
+    Width = 169
     Height = 21
     ItemHeight = 13
     TabOrder = 9
-    Text = 'cbb1'
     Items.Strings = (
       'ADMIN'
       'USER')
@@ -140,11 +141,10 @@ object Form5: TForm5
   object cbb2: TComboBox
     Left = 144
     Top = 168
-    Width = 145
+    Width = 169
     Height = 21
     ItemHeight = 13
     TabOrder = 10
-    Text = 'cbb2'
     Items.Strings = (
       'AKTIF'
       'NONAKTIF')
@@ -156,6 +156,7 @@ object Form5: TForm5
     Height = 25
     Caption = 'Beranda'
     TabOrder = 11
+    OnClick = btn6Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -170,8 +171,8 @@ object Form5: TForm5
     LibraryLocation = 
       'C:\Users\ACER\Documents\visual2uas_2110010145_yunimaulina\libmys' +
       'ql.dll'
-    Left = 688
-    Top = 136
+    Left = 856
+    Top = 264
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -179,12 +180,12 @@ object Form5: TForm5
     SQL.Strings = (
       'SELECT *  FROM tb_user')
     Params = <>
-    Left = 760
-    Top = 136
+    Left = 856
+    Top = 312
   end
   object ds1: TDataSource
     DataSet = ZQuery1
-    Left = 824
-    Top = 136
+    Left = 856
+    Top = 360
   end
 end
