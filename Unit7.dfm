@@ -48,6 +48,7 @@ object Form7: TForm7
     Height = 25
     Caption = 'BARU'
     TabOrder = 0
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 240
@@ -56,6 +57,7 @@ object Form7: TForm7
     Height = 25
     Caption = 'SIMPAN'
     TabOrder = 1
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 352
@@ -64,6 +66,7 @@ object Form7: TForm7
     Height = 25
     Caption = 'EDIT'
     TabOrder = 2
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 464
@@ -72,6 +75,7 @@ object Form7: TForm7
     Height = 25
     Caption = 'HAPUS'
     TabOrder = 3
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 576
@@ -80,6 +84,7 @@ object Form7: TForm7
     Height = 25
     Caption = 'BATAL'
     TabOrder = 4
+    OnClick = btn5Click
   end
   object edt1: TEdit
     Left = 368
@@ -128,6 +133,7 @@ object Form7: TForm7
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object btn6: TButton
     Left = 680
@@ -136,6 +142,7 @@ object Form7: TForm7
     Height = 25
     Caption = 'Beranda'
     TabOrder = 10
+    OnClick = btn6Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
